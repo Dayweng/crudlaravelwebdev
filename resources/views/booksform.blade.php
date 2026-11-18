@@ -28,11 +28,6 @@
             <input type="number" name="published_year" id="published_year" required>
         </div>
 
-        <div class="form-group">
-            <label for="cover">Cover Image</label>
-            <input type="text" name="cover" id="cover">
-        </div>
-
         <button type="submit" class="btn btn-add">Submit</button>
     </form>
 </body>

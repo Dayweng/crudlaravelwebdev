@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Book;
-use App\Http\Requests\StoreBookRequest;
-use App\Http\Requests\UpdateBookRequest;
 use Illuminate\Http\Request;
 
 class BookController extends Controller
@@ -34,7 +32,6 @@ class BookController extends Controller
             'title' => $request->title,
             'author' => $request->author,
             'published_year' => $request->published_year,
-            'cover_path' => "dummy.png",
         ]);
 
         return redirect("/");
@@ -65,7 +62,6 @@ class BookController extends Controller
             'title' => $request->title,
             'author' => $request->author,
             'published_year' => $request->published_year,
-            'cover_path' => "dummy.png",
         ]);
 
         return redirect("/");
@@ -80,7 +76,6 @@ class BookController extends Controller
 
         return redirect("/");
     }
-
 
     public function getAllBooks()
     {

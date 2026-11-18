@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string('title');
             $table->string('author');
             $table->integer('published_year');
-            $table->string('cover_path');
             $table->timestamps();
         });
     }
